@@ -851,7 +851,7 @@ arigatou = fs.readFileSync('./mp3/arigatou.mp3');
 		   }
 	    }
 	}
-	client.sendMessage(from, `「 *${fake} - WA* 」
+	client.sendMessage(from, `「 *SELFBOT - WA* 」
 *│◪* Isya
 *│◪* Rabu, 17 Maret 2021
 *│◪* 19:50:56 Wib
