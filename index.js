@@ -43,7 +43,7 @@ const speed = require('performance-now')
 const speedTest = require('@lh2020/speedtest-net');
 const { Utils_1 } = require('./node_modules/@adiwajshing/baileys/lib/WAConnection/Utils')
 
-prefix = 'z'
+prefix = '#'
 fake = '*LitRHap-SELF*'
 numbernye = '0'
 targetprivate = '918119971193'
