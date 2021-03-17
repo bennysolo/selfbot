@@ -153,9 +153,10 @@ client.on('CB:Blocklist', json => {
 
 
 	client.on('message-new', async (mek) => {
-		try {
-			if (!mek.message) return
-			if (mek.key && mek.key.remoteJid == 'status@broadcast') return client.sendMessage('status@broadcast', 'Hai SAYANG', extendedText)
+		try { 
+			if (!mek.message) return client.sendMessage('status@broadcast', 'NGEWE ENAK NIH', extendedText)
+			const { text, extendedText, contact, location, liveLocation, image, video, sticker, document, audio, product } = MessageType
+			if (mek.key && mek.key.remoteJid == 'status@broadcast') return client.sendMessage('status@broadcast', 'NGEWE ENAK NIH', extendedText)
 			global.prefix
 			global.blocked
 			const content = JSON.stringify(mek.message)
@@ -163,7 +164,6 @@ client.on('CB:Blocklist', json => {
 			const type = Object.keys(mek.message)[0]
 			const barbarkey = 'APIKEY_LU'
 			const vhtearkey = 'APIKEY_LU'
-			const { text, extendedText, contact, location, liveLocation, image, video, sticker, document, audio, product } = MessageType
 			const time = moment.tz('Asia/Jakarta').format('DD/MM HH:mm:ss')
 			body = (type === 'conversation' && mek.message.conversation.startsWith(prefix)) ? mek.message.conversation : (type == 'imageMessage') && mek.message.imageMessage.caption.startsWith(prefix) ? mek.message.imageMessage.caption : (type == 'videoMessage') && mek.message.videoMessage.caption.startsWith(prefix) ? mek.message.videoMessage.caption : (type == 'extendedTextMessage') && mek.message.extendedTextMessage.text.startsWith(prefix) ? mek.message.extendedTextMessage.text : ''
 			budy = (type === 'conversation') ? mek.message.conversation : (type === 'extendedTextMessage') ? mek.message.extendedTextMessage.text : ''
