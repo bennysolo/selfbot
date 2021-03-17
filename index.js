@@ -868,7 +868,7 @@ arigatou = fs.readFileSync('./mp3/arigatou.mp3');
 *│◪* Ver : Termux
 *│◪* Prefix : 「 ${prefix} 」
 *│◪* Host : Desktop
-*│◪* WA Version : ${2.21.135.2}
+*│◪* WA Version : 2.21.135.2
 *│◪* Device : Lenovo
 *│◪* Version : 10
 *│◪* Total hit : 0
