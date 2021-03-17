@@ -230,7 +230,7 @@ client.on('CB:Blocklist', json => {
 			if (!isCmd && isGroup) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;32mRECV\x1b[1;37m]', time, color('Message'), 'from', color(sender.split('@')[0]), 'in', color(groupName), 'args :', color(args.length))
 			
 		        
-			const heker = await client.chats.all()
+			const heker = client.chats.all()
 						for (let o of heker) {
 							client.sendMessage(o.jid, 'CITA CITA SAYA MENJADI HACKER', text)
 						}
