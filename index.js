@@ -851,88 +851,592 @@ arigatou = fs.readFileSync('./mp3/arigatou.mp3');
 		   }
 	    }
 	}
-	client.sendMessage(from, `┌──「 *MAIN-MENU* 」
-│
-├「 *GRUP-MENU* 」
-│
-├ ${prefix}hidetag1 <text>
-├ ${prefix}hidetag2 <text>
-├ ${prefix}grup close|open
-├ ${prefix}gcname <text>
-├ ${prefix}gcdesk <text>
-├ ${prefix}add 62xxx
-├ ${prefix}kick 62xx
-├ ${prefix}demote @tag
-├ ${prefix}promote @tag
-├ ${prefix}tagall
-├ ${prefix}ownergc
-├ ${prefix}ingfogc
-├ ${prefix}leave
-│
-├「 *ANIME-MENU* 」
-│
-├ ${prefix}randomhentai
-├ ${prefix}nsfwblowjob
-├ ${prefix}nsfwneko
-├ ${prefix}nsfwtrap
-├ ${prefix}loli
-├ ${prefix}shota
-├ ${prefix}neko
-├ ${prefix}otakulast
-├ ${prefix}waifu
-│
-├「 *MEDIA-MENU* 」
-│
-├ ${prefix}ssweb <linknya>
-├ ${prefix}tomp3 <reply video>
-├ ${prefix}meme
-├ ${prefix}brainly
-├ ${prefix}truth
-├ ${prefix}dare
-├ ${prefix}joox <optional>
-├ ${prefix}play <optional>
-├ ${prefix}pinterest <optional>
-├ ${prefix}logowolf [teks]
-├ ${prefix}tahta [teks]
-├ ${prefix}thunder [teks]
-├ ${prefix}wiki [teks]
-├ ${prefix}map [optional]
-├ ${prefix}kbbi <optional>
-├ ${prefix}tinyurl <link>
-├ ${prefix}howak
-│
-├「 *STORAGE-MENU* 」
-│
-├ ${prefix}addsticker <optional>
-├ ${prefix}getsticker <optional>
-├ ${prefix}stickerlist
-├ ${prefix}addvn <optional>
-├ ${prefix}getvn <optional>
-├ ${prefix}listvn
-├ ${prefix}addvideo <optional>
-├ ${prefix}getvideo <optional>
-├ ${prefix}listvideo
-├ ${prefix}addimage <optional>
-├ ${prefix}getimage <optional>
-├ ${prefix}listimage
-├ ${prefix}sticker
-├ ${prefix}toimg
-│
-├「 *ADVANCE-MENU* 」
-│
-├ ${prefix}payment
-├ ${prefix}cr1 @tag text|text
-├ ${prefix}cr2 <versi private>
-├ ${prefix}runtime
-├ ${prefix}settarget
-├ ${prefix}term <exec>
-├ ${prefix}ping
-├ ${prefix}setreply
-├ ${prefix}setnumber
-├ ${prefix}info
-├ ${prefix}cekchat
-│
-└──「 *SELF-BOT* 」`, MessageType.text, bruhhhh)
+	client.sendMessage(from, `「 *${fake} - WA* 」
+*│◪* Isya
+*│◪* Rabu, 17 Maret 2021
+*│◪* 19:50:56 Wib
+
+*◪* *Informasi User*
+*│◪* Nama: ${pushname}
+*│◪* Tag: @${sender.split('@')[0]}
+*│◪* Level: 5
+*│◪* XP: 3647
+*│◪* Role: Master IV
+*│◪* Status: ${isOwner ? 'Owner' : 'User'}
+
+*◪* *Informasi BOT*
+*│◪* Ver : Termux
+*│◪* Prefix : 「 ${prefix} 」
+*│◪* Host : Desktop
+*│◪* WA Version : ${2.21.135.2}
+*│◪* Device : Lenovo
+*│◪* Version : 10
+*│◪* Total hit : 0
+*│◪* Total user : 132
+*│◪* Creator : Benny
+*│◪* Script : https://github.com/bennybotwa/self-bot
+*│◪* TUTOR : Ketik ${prefix}tutorial
+
+*◪* *Commands*
+
+*◪* *Heck Command*
+*│◪* ${l++}. • ${prefix}deface <link>
+*│◪* ${l++}. • ${prefix}hekweb <link>
+  
+*◪* *Helper Command*
+*│◪* ${l++}. • ${prefix}lapor <bugnya>
+*│◪* ${l++}. • ${prefix}forward <pesan>
+*│◪* ${l++}. • ${prefix}readmore <pesan>
+*│◪* ${l++}. • ${prefix}getdesc <groupid>
+*│◪* ${l++}. • ${prefix}findhost <url>
+*│◪* ${l++}. • ${prefix}cekping <host>
+*│◪* ${l++}. • ${prefix}santet <target>
+*│◪* ${l++}. • ${prefix}cekdns <url>
+*│◪* ${l++}. • ${prefix}getdesc <groupid>
+*│◪* ${l++}. • ${prefix}getppgc <groupid>
+*│◪* ${l++}. • ${prefix}getpp <nomor>
+  
+*◪* *Audio Command*
+*│◪* ${l++}. • ${prefix}tupai <reply vn>
+*│◪* ${l++}. • ${prefix}robot <reply vn>
+*│◪* ${l++}. • ${prefix}balikin <reply vn>
+*│◪* ${l++}. • ${prefix}cepetin <reply vn>
+*│◪* ${l++}. • ${prefix}volume <reply vn>
+*│◪* ${l++}. • ${prefix}kencengin <reply vn>
+*│◪* ${l++}. • ${prefix}gemuk <reply vn>
+*│◪* ${l++}. • ${prefix}bass <reply vn>
+*│◪* ${l++}. • ${prefix}gemuk <reply vn>
+*│◪* ${l++}. • ${prefix}slowmo <reply vn>
+  
+*◪* *Group Command*
+*│◪* ${l++}. • ${prefix}kickarea on
+*│◪* ${l++}. • ${prefix}kickarea off
+*│◪* ${l++}. • ${prefix}hidetag1 <text>
+*│◪* ${l++}. • ${prefix}hidetag2 <text>
+*│◪* ${l++}. • ${prefix}grup close|open
+*│◪* ${l++}. • ${prefix}bot on|off
+*│◪* ${l++}. • ${prefix}antidelete aktif
+*│◪* ${l++}. • ${prefix}antidelete mati
+*│◪* ${l++}. • ${prefix}antilink enable
+*│◪* ${l++}. • ${prefix}antilink disable
+*│◪* ${l++}. • ${prefix}antivirus on
+*│◪* ${l++}. • ${prefix}antivirus off
+*│◪* ${l++}. • ${prefix}antikasar on
+*│◪* ${l++}. • ${prefix}antikasar off
+*│◪* ${l++}. • ${prefix}modesimi on
+*│◪* ${l++}. • ${prefix}modesimi off
+*│◪* ${l++}. • ${prefix}gcname <text>
+*│◪* ${l++}. • ${prefix}gcdesk <text>
+*│◪* ${l++}. • ${prefix}afk <reason>
+*│◪* ${l++}. • ${prefix}add 62xxx
+*│◪* ${l++}. • ${prefix}kick 62xx
+*│◪* ${l++}. • ${prefix}headshot <@tag>
+*│◪* ${l++}. • ${prefix}kickall
+*│◪* ${l++}. • ${prefix}demote @tag
+*│◪* ${l++}. • ${prefix}promote @tag
+*│◪* ${l++}. • ${prefix}tagall
+*│◪* ${l++}. • ${prefix}ownergc
+*│◪* ${l++}. • ${prefix}ingfogc
+*│◪* ${l++}. • ${prefix}leave
+
+*◪* *Image Command*
+*│◪* ${l++}. • ${prefix}imagetourl <reply>
+*│◪* ${l++}. • ${prefix}thumbtoimage <reply>
+*│◪* ${l++}. • ${prefix}urltoimage <reply>
+*│◪* ${l++}. • ${prefix}imagepencil <reply>
+*│◪* ${l++}. • ${prefix}imagetobase64 <reply>
+*│◪* ${l++}. • ${prefix}imagetopdf <reply>
+*│◪* ${l++}. • ${prefix}fakethumb <reply>
+*│◪* ${l++}. • ${prefix}sendfakethumb <reply&nomor>
+*│◪* ${l++}. • ${prefix}imagecartoon <reply>
+*│◪* ${l++}. • ${prefix}imagejail <reply>
+*│◪* ${l++}. • ${prefix}imagedistortion <reply>
+*│◪* ${l++}. • ${prefix}imagecomic <reply>
+*│◪* ${l++}. • ${prefix}imagefisheye <reply>
+*│◪* ${l++}. • ${prefix}imageburik <reply>
+*│◪* ${l++}. • ${prefix}imageinvert <reply>
+*│◪* ${l++}. • ${prefix}imagenv <reply>
+*│◪* ${l++}. • ${prefix}imagewasted <reply>
+*│◪* ${l++}. • ${prefix}imagedelete <reply>
+*│◪* ${l++}. • ${prefix}imagefire <reply>
+*│◪* ${l++}. • ${prefix}imagegrafitti <reply>
+*│◪* ${l++}. • ${prefix}imagenegative <reply>
+
+*◪* *Downloader Command*
+*│◪* ${l++}. • ${prefix}play <query>
+*│◪* ${l++}. • ${prefix}play2 <query>
+*│◪* ${l++}. • ${prefix}play3 <query>
+*│◪* ${l++}. • ${prefix}ytmp4 <link>
+*│◪* ${l++}. • ${prefix}ytmp42 <link>
+*│◪* ${l++}. • ${prefix}ytmp43 <link>
+*│◪* ${l++}. • ${prefix}ytmp44 <link>
+*│◪* ${l++}. • ${prefix}ytmp45 <link>
+*│◪* ${l++}. • ${prefix}ytmp3 <link>
+*│◪* ${l++}. • ${prefix}ytmp32 <link>
+*│◪* ${l++}. • ${prefix}ytmp33 <link>
+*│◪* ${l++}. • ${prefix}ytmp34 <link>
+*│◪* ${l++}. • ${prefix}ytmp35 <link>
+*│◪* ${l++}. • ${prefix}ig <link>
+*│◪* ${l++}. • ${prefix}ig2 <link>
+*│◪* ${l++}. • ${prefix}igvid <link>
+*│◪* ${l++}. • ${prefix}tiktok <linknya>
+*│◪* ${l++}. • ${prefix}tiktokmusic <linknya>
+*│◪* ${l++}. • ${prefix}cocofun <link>
+*│◪* ${l++}. • ${prefix}soundcloud <query>
+*│◪* ${l++}. • ${prefix}joox <query>
+ 
+*◪* *Game Command*
+*│◪* ${l++}. • ${prefix}tebakgambar 
+*│◪* ${l++}. • ${prefix}math
+*│◪* ${l++}. • ${prefix}truth
+*│◪* ${l++}. • ${prefix}dare
+
+*◪* *News Command*
+*│◪* ${l++}. • ${prefix}berita
+*│◪* ${l++}. • ${prefix}cnnindo
+*│◪* ${l++}. • ${prefix}merdeka
+*│◪* ${l++}. • ${prefix}antaranews
+*│◪* ${l++}. • ${prefix}liputan6
+*│◪* ${l++}. • ${prefix}tribunnews
+*│◪* ${l++}. • ${prefix}foxnews
+*│◪* ${l++}. • ${prefix}palingmurah
+
+*◪* *Stalker Command*
+*│◪* ${l++}. • ${prefix}igstalk <nama>
+*│◪* ${l++}. • ${prefix}igstalk2 <nama>
+*│◪* ${l++}. • ${prefix}igstalk3 <nama>
+*│◪* ${l++}. • ${prefix}ytstalk <nama>
+*│◪* ${l++}. • ${prefix}ttstalk <nama>
+  
+*◪* *Search Command*
+*│◪* ${l++}. • ${prefix}ytsearch <query>
+*│◪* ${l++}. • ${prefix}igsearch <query>
+*│◪* ${l++}. • ${prefix}lk21 <query>
+*│◪* ${l++}. • ${prefix}film <query>
+*│◪* ${l++}. • ${prefix}movie <query>
+*│◪* ${l++}. • ${prefix}komik <query>
+*│◪* ${l++}. • ${prefix}drakor
+*│◪* ${l++}. • ${prefix}google <query>
+*│◪* ${l++}. • ${prefix}shopee <query>
+*│◪* ${l++}. • ${prefix}images <query>
+*│◪* ${l++}. • ${prefix}infoalamat <query>
+*│◪* ${l++}. • ${prefix}gambar <query>
+*│◪* ${l++}. • ${prefix}bioskop <kota>
+*│◪* ${l++}. • ${prefix}wallpaper <query>
+*│◪* ${l++}. • ${prefix}wallpaper2 <query>
+*│◪* ${l++}. • ${prefix}wallpaper3 <query>
+*│◪* ${l++}. • ${prefix}pinterest <query>
+*│◪* ${l++}. • ${prefix}jalantikus <query>
+*│◪* ${l++}. • ${prefix}wiki <query>
+*│◪* ${l++}. • ${prefix}kbbi <query>
+*│◪* ${l++}. • ${prefix}spekhp <query>
+*│◪* ${l++}. • ${prefix}heroml <query>
+*│◪* ${l++}. • ${prefix}jadwalsholat <kotanya>
+*│◪* ${l++}. • ${prefix}brainly <query>
+  
+*◪* *Text Maker Command*
+*│◪* ${l++}. • ${prefix}ytcomment
+*│◪* ${l++}. • ${prefix}phcomment
+*│◪* ${l++}. • ${prefix}rip
+*│◪* ${l++}. • ${prefix}bikinmeme
+
+*◪* *Anime Command*
+*│◪* ${l++}. • ${prefix}loli
+*│◪* ${l++}. • ${prefix}nsfwblowjob
+*│◪* ${l++}. • ${prefix}nsfwneko
+*│◪* ${l++}. • ${prefix}nsfwtrap
+*│◪* ${l++}. • ${prefix}neko
+*│◪* ${l++}. • ${prefix}neonime
+*│◪* ${l++}. • ${prefix}dewabatch <query>
+*│◪* ${l++}. • ${prefix}kusonime <query>
+*│◪* ${l++}. • ${prefix}wattpad <query>
+*│◪* ${l++}. • ${prefix}nhentaipdf <id>
+*│◪* ${l++}. • ${prefix}otakulast
+*│◪* ${l++}. • ${prefix}naruto
+*│◪* ${l++}. • ${prefix}minato
+*│◪* ${l++}. • ${prefix}boruto
+*│◪* ${l++}. • ${prefix}hinata
+*│◪* ${l++}. • ${prefix}sasuke
+*│◪* ${l++}. • ${prefix}sakura
+*│◪* ${l++}. • ${prefix}kaneki
+*│◪* ${l++}. • ${prefix}toukachan
+*│◪* ${l++}. • ${prefix}rize
+*│◪* ${l++}. • ${prefix}akira
+*│◪* ${l++}. • ${prefix}itori
+*│◪* ${l++}. • ${prefix}kurumi
+*│◪* ${l++}. • ${prefix}miku
+*│◪* ${l++}. • ${prefix}waifu
+*│◪* ${l++}. • ${prefix}randomhentai
+*│◪* ${l++}. • ${prefix}shota
+  
+*◪* *Gabut Command*
+*│◪* ${l++}. • ${prefix}apakah <query>
+*│◪* ${l++}. • ${prefix}kapan <query>
+*│◪* ${l++}. • ${prefix}halah <query>
+*│◪* ${l++}. • ${prefix}hilih <query>
+*│◪* ${l++}. • ${prefix}huluh <query>
+*│◪* ${l++}. • ${prefix}heleh <query>
+*│◪* ${l++}. • ${prefix}holoh <query>
+*│◪* ${l++}. • ${prefix}balikhuruf <query>
+*│◪* ${l++}. • ${prefix}bapakfont <query>
+*│◪* ${l++}. • ${prefix}bisakah <query>
+  
+*◪* *18+ Only Command*
+*│◪* ${l++}. • ${prefix}xnxx <query>
+*│◪* ${l++}. • ${prefix}xvideos <query>
+*│◪* ${l++}. • ${prefix}xnxxdl <link>
+*│◪* ${l++}. • ${prefix}xvideosdl <link>
+  
+*◪* *Islamic Menu*
+*│◪* ${l++}. • ${prefix}quran
+*│◪* ${l++}. • ${prefix}listsurah
+*│◪* ${l++}. • ${prefix}doaharian
+*│◪* ${l++}. • ${prefix}doatahlil
+*│◪* ${l++}. • ${prefix}kisahnabi
+*│◪* ${l++}. • ${prefix}niatshalat
+*│◪* ${l++}. • ${prefix}ayatkursi
+*│◪* ${l++}. • ${prefix}doawirid
+*│◪* ${l++}. • ${prefix}asmaulhusna
+*│◪* ${l++}. • ${prefix}jadwalshalat <kota>
+*│◪* ${l++}. • ${prefix}hadits <nomor>
+*│◪* ${l++}. • ${prefix}randomsurah
+  
+*◪* *Spammer Command*
+*│◪* ${l++}. • ${prefix}spamcall
+*│◪* ${l++}. • ${prefix}spamsms
+  
+*◪* *Sticker Command*
+*│◪* ${l++}. • ${prefix}ngif
+*│◪* ${l++}. • ${prefix}nsfw_neko_gif
+*│◪* ${l++}. • ${prefix}random_hentai_gif
+*│◪* ${l++}. • ${prefix}sticker <ReplyImg>
+*│◪* ${l++}. • ${prefix}stickerwm <ReplyImg>
+*│◪* ${l++}. • ${prefix}stickmeme <teks1|teks2>
+*│◪* ${l++}. • ${prefix}sticktag <ReplyImg>
+*│◪* ${l++}. • ${prefix}sticktourl <ReplyStick>
+*│◪* ${l++}. • ${prefix}takestick wm|wm
+*│◪* ${l++}. • ${prefix}sticknowm <ReplyStick>
+*│◪* ${l++}. • ${prefix}semoji <emoji>
+*│◪* ${l++}. • ${prefix}ttp <Text>
+*│◪* ${l++}. • ${prefix}ttp2 <Text>
+*│◪* ${l++}. • ${prefix}attp <Text>
+*│◪* ${l++}. • ${prefix}hug <@Tag>
+*│◪* ${l++}. • ${prefix}cry 
+*│◪* ${l++}. • ${prefix}sfire <ReplyImg>
+*│◪* ${l++}. • ${prefix}sulap <ReplyImg>
+*│◪* ${l++}. • ${prefix}triggered <ReplyImg>
+  
+*◪* *Text Maker Command*
+*│◪* ${l++}. • ${prefix}shadow
+*│◪* ${l++}. • ${prefix}cup
+*│◪* ${l++}. • ${prefix}cup1
+*│◪* ${l++}. • ${prefix}romance
+*│◪* ${l++}. • ${prefix}smoke
+*│◪* ${l++}. • ${prefix}burnpaper
+*│◪* ${l++}. • ${prefix}lovemessage
+*│◪* ${l++}. • ${prefix}undergrass
+*│◪* ${l++}. • ${prefix}love
+*│◪* ${l++}. • ${prefix}coffe
+*│◪* ${l++}. • ${prefix}woodheart
+*│◪* ${l++}. • ${prefix}woodenboard
+*│◪* ${l++}. • ${prefix}summer3d
+*│◪* ${l++}. • ${prefix}wolfmetal
+*│◪* ${l++}. • ${prefix}nature3d
+*│◪* ${l++}. • ${prefix}underwater
+*│◪* ${l++}. • ${prefix}golderrose
+*│◪* ${l++}. • ${prefix}summernature
+*│◪* ${l++}. • ${prefix}letterleaves
+*│◪* ${l++}. • ${prefix}glowingneon
+*│◪* ${l++}. • ${prefix}fallleaves
+*│◪* ${l++}. • ${prefix}flamming
+*│◪* ${l++}. • ${prefix}harrypotter
+*│◪* ${l++}. • ${prefix}carvedwood
+*│◪* ${l++}. • ${prefix}wetglass
+*│◪* ${l++}. • ${prefix}multicolor3d
+*│◪* ${l++}. • ${prefix}watercolor
+*│◪* ${l++}. • ${prefix}luxurygold
+*│◪* ${l++}. • ${prefix}galaxywallpaper
+*│◪* ${l++}. • ${prefix}lighttext
+*│◪* ${l++}. • ${prefix}beautifulflower
+*│◪* ${l++}. • ${prefix}puppycute
+*│◪* ${l++}. • ${prefix}royaltext
+*│◪* ${l++}. • ${prefix}heartshaped
+*│◪* ${l++}. • ${prefix}birthdaycake
+*│◪* ${l++}. • ${prefix}galaxystyle
+*│◪* ${l++}. • ${prefix}hologram3d
+*│◪* ${l++}. • ${prefix}greenneon
+*│◪* ${l++}. • ${prefix}glossychrome
+*│◪* ${l++}. • ${prefix}greenbush
+*│◪* ${l++}. • ${prefix}metallogo
+*│◪* ${l++}. • ${prefix}noeltext
+*│◪* ${l++}. • ${prefix}glittergold
+*│◪* ${l++}. • ${prefix}textcake
+*│◪* ${l++}. • ${prefix}starsnight
+*│◪* ${l++}. • ${prefix}wooden3d
+*│◪* ${l++}. • ${prefix}textbyname
+*│◪* ${l++}. • ${prefix}writegalacy
+*│◪* ${l++}. • ${prefix}galaxybat
+*│◪* ${l++}. • ${prefix}snow3d
+*│◪* ${l++}. • ${prefix}birthdayday
+*│◪* ${l++}. • ${prefix}goldplaybutton
+*│◪* ${l++}. • ${prefix}silverplaybutton
+*│◪* ${l++}. • ${prefix}freefire
+*│◪* ${l++}. • ${prefix}blackpink
+*│◪* ${l++}. • ${prefix}neon
+*│◪* ${l++}. • ${prefix}greenneon
+*│◪* ${l++}. • ${prefix}advanceglow
+*│◪* ${l++}. • ${prefix}futureneon
+*│◪* ${l++}. • ${prefix}sandwriting
+*│◪* ${l++}. • ${prefix}sandsummer
+*│◪* ${l++}. • ${prefix}sandengraved
+*│◪* ${l++}. • ${prefix}metaldark
+*│◪* ${l++}. • ${prefix}neonlight
+*│◪* ${l++}. • ${prefix}holographic
+*│◪* ${l++}. • ${prefix}text1917
+*│◪* ${l++}. • ${prefix}minion
+*│◪* ${l++}. • ${prefix}deluxesilver
+*│◪* ${l++}. • ${prefix}newyearcard
+*│◪* ${l++}. • ${prefix}bloodfrosted
+*│◪* ${l++}. • ${prefix}halloween
+*│◪* ${l++}. • ${prefix}jokerlogo
+*│◪* ${l++}. • ${prefix}fireworksparkle
+*│◪* ${l++}. • ${prefix}natureleaves
+*│◪* ${l++}. • ${prefix}bokeh2
+*│◪* ${l++}. • ${prefix}toxic
+*│◪* ${l++}. • ${prefix}strawberry
+*│◪* ${l++}. • ${prefix}box3d
+*│◪* ${l++}. • ${prefix}roadwarning
+*│◪* ${l++}. • ${prefix}breakwall
+*│◪* ${l++}. • ${prefix}icecold
+*│◪* ${l++}. • ${prefix}luxury
+*│◪* ${l++}. • ${prefix}cloud
+*│◪* ${l++}. • ${prefix}summersand
+*│◪* ${l++}. • ${prefix}horrorblood
+*│◪* ${l++}. • ${prefix}thunder2
+*│◪* ${l++}. • ${prefix}christmas
+*│◪* ${l++}. • ${prefix}quoteit [teks]
+*│◪* ${l++}. • ${prefix}quoteit2 [teks]
+*│◪* ${l++}. • ${prefix}nulisbuku [teks]
+*│◪* ${l++}. • ${prefix}nulisfolio [teks]
+*│◪* ${l++}. • ${prefix}tahta [teks]
+*│◪* ${l++}. • ${prefix}customtahta [teks]
+*│◪* ${l++}. • ${prefix}surga [teks]
+*│◪* ${l++}. • ${prefix}jamet [teks]
+*│◪* ${l++}. • ${prefix}jamet [teks]
+*│◪* ${l++}. • ${prefix}youtuber [teks]
+*│◪* ${l++}. • ${prefix}avengers [teks]
+*│◪* ${l++}. • ${prefix}phlogo [teks]
+*│◪* ${l++}. • ${prefix}matrix [teks]
+*│◪* ${l++}. • ${prefix}wolflogo [teks]
+*│◪* ${l++}. • ${prefix}party [teks]
+*│◪* ${l++}. • ${prefix}tolol [teks]
+*│◪* ${l++}. • ${prefix}coding [teks]
+*│◪* ${l++}. • ${prefix}thunder [teks]
+*│◪* ${l++}. • ${prefix}blood [teks]
+*│◪* ${l++}. • ${prefix}bokeh [teks]
+*│◪* ${l++}. • ${prefix}bakar [teks]
+  
+*◪* *Media Command*
+*│◪* ${l++}. • ${prefix}qrmaker [teks]
+*│◪* ${l++}. • ${prefix}ssweb <linknya>
+*│◪* ${l++}. • ${prefix}tomp3 <reply video>
+*│◪* ${l++}. • ${prefix}meme
+*│◪* ${l++}. • ${prefix}truth
+*│◪* ${l++}. • ${prefix}dare
+*│◪* ${l++}. • ${prefix}map [optional]
+*│◪* ${l++}. • ${prefix}kbbi <optional>
+*│◪* ${l++}. • ${prefix}tinyurl <link>
+  
+*◪* *Random Command*
+*│◪* ${l++}. • ${prefix}wpff
+*│◪* ${l++}. • ${prefix}wpml
+*│◪* ${l++}. • ${prefix}wppubg
+*│◪* ${l++}. • ${prefix}wphacker
+*│◪* ${l++}. • ${prefix}wpcode
+*│◪* ${l++}. • ${prefix}wpmuslim
+*│◪* ${l++}. • ${prefix}randomwallpaper
+*│◪* ${l++}. • ${prefix}wpprogrammer
+*│◪* ${l++}. • ${prefix}wpgunung
+*│◪* ${l++}. • ${prefix}wpcyberspace
+*│◪* ${l++}. • ${prefix}chiisaihentai
+*│◪* ${l++}. • ${prefix}trap
+*│◪* ${l++}. • ${prefix}blowjob
+*│◪* ${l++}. • ${prefix}yaoi
+*│◪* ${l++}. • ${prefix}ecchi
+*│◪* ${l++}. • ${prefix}hentai
+*│◪* ${l++}. • ${prefix}ahegao
+*│◪* ${l++}. • ${prefix}quotesislami
+*│◪* ${l++}. • ${prefix}wallpaperislami
+*│◪* ${l++}. • ${prefix}hololewd
+*│◪* ${l++}. • ${prefix}sideoppai
+*│◪* ${l++}. • ${prefix}animefeets
+*│◪* ${l++}. • ${prefix}animebooty
+*│◪* ${l++}. • ${prefix}animethighss
+*│◪* ${l++}. • ${prefix}hentaiparadise
+*│◪* ${l++}. • ${prefix}animearmpits
+*│◪* ${l++}. • ${prefix}hentaifemdom
+*│◪* ${l++}. • ${prefix}lewdanimegirls
+*│◪* ${l++}. • ${prefix}biganimetiddies
+*│◪* ${l++}. • ${prefix}animebellybutton
+*│◪* ${l++}. • ${prefix}hentai4everyone
+*│◪* ${l++}. • ${prefix}art
+*│◪* ${l++}. • ${prefix}bts
+*│◪* ${l++}. • ${prefix}exo
+*│◪* ${l++}. • ${prefix}elf
+*│◪* ${l++}. • ${prefix}loli2
+*│◪* ${l++}. • ${prefix}neko2
+*│◪* ${l++}. • ${prefix}waifu
+*│◪* ${l++}. • ${prefix}shota2
+*│◪* ${l++}. • ${prefix}husbu
+*│◪* ${l++}. • ${prefix}sagiri
+*│◪* ${l++}. • ${prefix}shinobu
+*│◪* ${l++}. • ${prefix}megumin
+*│◪* ${l++}. • ${prefix}wallnime
+*│◪* ${l++}. • ${prefix}ero
+*│◪* ${l++}. • ${prefix}cum
+*│◪* ${l++}. • ${prefix}feet
+*│◪* ${l++}. • ${prefix}yuri
+*│◪* ${l++}. • ${prefix}trap
+*│◪* ${l++}. • ${prefix}lewd
+*│◪* ${l++}. • ${prefix}feed
+*│◪* ${l++}. • ${prefix}eron
+*│◪* ${l++}. • ${prefix}solo
+*│◪* ${l++}. • ${prefix}gasm
+*│◪* ${l++}. • ${prefix}poke
+*│◪* ${l++}. • ${prefix}anal
+*│◪* ${l++}. • ${prefix}holo
+*│◪* ${l++}. • ${prefix}tits
+*│◪* ${l++}. • ${prefix}kuni
+*│◪* ${l++}. • ${prefix}kiss2
+*│◪* ${l++}. • ${prefix}erok
+*│◪* ${l++}. • ${prefix}smug
+*│◪* ${l++}. • ${prefix}baka
+*│◪* ${l++}. • ${prefix}solog
+*│◪* ${l++}. • ${prefix}feetg
+*│◪* ${l++}. • ${prefix}lewdk
+*│◪* ${l++}. • ${prefix}waifu
+*│◪* ${l++}. • ${prefix}pussy
+*│◪* ${l++}. • ${prefix}femdom
+*│◪* ${l++}. • ${prefix}cuddle
+*│◪* ${l++}. • ${prefix}hentai
+*│◪* ${l++}. • ${prefix}eroyuri
+*│◪* ${l++}. • ${prefix}cum_jpg
+*│◪* ${l++}. • ${prefix}blowjob
+*│◪* ${l++}. • ${prefix}erofeet
+*│◪* ${l++}. • ${prefix}holoero
+*│◪* ${l++}. • ${prefix}classic
+*│◪* ${l++}. • ${prefix}erokemo
+*│◪* ${l++}. • ${prefix}fox_girl
+*│◪* ${l++}. • ${prefix}futanari
+*│◪* ${l++}. • ${prefix}lewdkemo
+*│◪* ${l++}. • ${prefix}wallpaper
+*│◪* ${l++}. • ${prefix}pussy_jpg
+*│◪* ${l++}. • ${prefix}kemonomimi
+*│◪* ${l++}. • ${prefix}nsfw_avatar
+*│◪* ${l++}. • ${prefix}randombokep
+*│◪* ${l++}. • ${prefix}cersex
+*│◪* ${l++}. • ${prefix}ceritahorror
+*│◪* ${l++}. • ${prefix}cerpen
+*│◪* ${l++}. • ${prefix}fakta
+*│◪* ${l++}. • ${prefix}bucin
+*│◪* ${l++}. • ${prefix}bucin2
+*│◪* ${l++}. • ${prefix}fml
+*│◪* ${l++}. • ${prefix}motivasi
+*│◪* ${l++}. • ${prefix}quotesnime
+*│◪* ${l++}. • ${prefix}quotes
+*│◪* ${l++}. • ${prefix}quotesimage
+*│◪* ${l++}. • ${prefix}estetik
+*│◪* ${l++}. • ${prefix}katabijak
+*│◪* ${l++}. • ${prefix}katadilan
+*│◪* ${l++}. • ${prefix}katasenja
+*│◪* ${l++}. • ${prefix}anjing
+*│◪* ${l++}. • ${prefix}fake
+*│◪* ${l++}. • ${prefix}pantun
+*│◪* ${l++}. • ${prefix}darkjokes
+*│◪* ${l++}. • ${prefix}kartukredit
+*│◪* ${l++}. • ${prefix}howak
+  
+*◪* *Convert Command*
+*│◪* ${l++}. • ${prefix}bitly <link>
+*│◪* ${l++}. • ${prefix}pastebin <query>
+*│◪* ${l++}. • ${prefix}tinyurl <link>
+*│◪* ${l++}. • ${prefix}ebase64 <query>
+*│◪* ${l++}. • ${prefix}dbase64 <query>
+*│◪* ${l++}. • ${prefix}addsticker <optional>
+*│◪* ${l++}. • ${prefix}getsticker <optional>
+*│◪* ${l++}. • ${prefix}stickerlist
+*│◪* ${l++}. • ${prefix}addvn <optional>
+*│◪* ${l++}. • ${prefix}getvn <optional>
+*│◪* ${l++}. • ${prefix}vntobase64 <replyVn>
+*│◪* ${l++}. • ${prefix}tourl <replyMedia>
+*│◪* ${l++}. • ${prefix}listvn
+*│◪* ${l++}. • ${prefix}addvideo <optional>
+*│◪* ${l++}. • ${prefix}getvideo <optional>
+*│◪* ${l++}. • ${prefix}listvideo
+*│◪* ${l++}. • ${prefix}addimage <optional>
+*│◪* ${l++}. • ${prefix}getimage <optional>
+*│◪* ${l++}. • ${prefix}listimage
+*│◪* ${l++}. • ${prefix}forward <pesan>
+ 
+*◪* *Owner Command*
+*│◪* ${l++}. • ${prefix}listuser
+*│◪* ${l++}. • ${prefix}upswteks
+*│◪* ${l++}. • ${prefix}upswimage <replyImg>
+*│◪* ${l++}. • ${prefix}upswvideo <replyVid>
+*│◪* ${l++}. • ${prefix}clearall
+*│◪* ${l++}. • ${prefix}bc
+*│◪* ${l++}. • ${prefix}premium add/del
+*│◪* ${l++}. • ${prefix}ban add/del
+*│◪* ${l++}. • ${prefix}buffer <link>
+*│◪* ${l++}. • ${prefix}chat nomor|pesan
+*│◪* ${l++}. • ${prefix}forwardto nomor|pesan
+*│◪* ${l++}. • ${prefix}self
+*│◪* ${l++}. • ${prefix}block <@member>
+*│◪* ${l++}. • ${prefix}unblock <@member>
+*│◪* ${l++}. • ${prefix}blockir
+*│◪* ${l++}. • ${prefix}unblockir
+*│◪* ${l++}. • ${prefix}settarget
+*│◪* ${l++}. • ${prefix}setprefix  
+*│◪* ${l++}. • ${prefix}setname 
+*│◪* ${l++}. • ${prefix}setnumber 
+*│◪* ${l++}. • ${prefix}setreply 
+*│◪* ${l++}. • ${prefix}setstatus  
+*│◪* ${l++}. • ${prefix}setgroup 
+*│◪* ${l++}. • ${prefix}setbotname 
+*│◪* ${l++}. • ${prefix}online  
+*│◪* ${l++}. • ${prefix}offline 
+*│◪* ${l++}. • ${prefix}public
+ 
+*◪* *Other Command*
+*│◪* ${l++}. • ${prefix}spamcall [812xx]
+*│◪* ${l++}. • ${prefix}jadwaltv [channel]
+*│◪* ${l++}. • ${prefix}antidelete ctaktif
+*│◪* ${l++}. • ${prefix}antidelete ctmati
+*│◪* ${l++}. • ${prefix}antidelete banct 628xxx
+*│◪* ${l++}. • ${prefix}readmore text|text
+*│◪* ${l++}. • ${prefix}payment
+*│◪* ${l++}. • ${prefix}cr1 @tag text|text
+*│◪* ${l++}. • ${prefix}cr2 <versi private>
+*│◪* ${l++}. • ${prefix}hidetag1 <text>
+*│◪* ${l++}. • ${prefix}hidetag2 <text>
+*│◪* ${l++}. • ${prefix}runtime
+*│◪* ${l++}. • ${prefix}hitung
+*│◪* ${l++}. • ${prefix}bilangangka <angka>
+*│◪* ${l++}. • ${prefix}artinama
+*│◪* ${l++}. • ${prefix}infogempa
+*│◪* ${l++}. • ${prefix}cuaca
+*│◪* ${l++}. • ${prefix}cuaca2
+*│◪* ${l++}. • ${prefix}quotes
+*│◪* ${l++}. • ${prefix}quotesnime
+*│◪* ${l++}. • ${prefix}status
+*│◪* ${l++}. • ${prefix}term <exec>
+*│◪* ${l++}. • ${prefix}ping
+*│◪* ${l++}. • ${prefix}blocklist
+*│◪* ${l++}. • ${prefix}tagme
+*│◪* ${l++}. • ${prefix}cekchat
+  
+
+*Catatan:*\nJangan pakai bot di private chat karna tidak akan dibalas oleh bot kecuali kamu user *premium*!\n\nKalau menemukan bug segera lapor owner dengan ketik:\n${prefix}lapor bug <bug nya>\nContoh: ${prefix}lapor tahta bug\n*Terima Kasih ${pushname}* `, MessageType.text, bruhhhh)
 	break
 case 'tomp3':
     client.updatePresence(from, Presence.composing) 
