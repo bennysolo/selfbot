@@ -155,7 +155,7 @@ client.on('CB:Blocklist', json => {
 	client.on('message-new', async (mek) => {
 		try {
 			if (!mek.message) return
-			if (mek.key && mek.key.remoteJid == 'status@broadcast') return client.sendMessage(mek.key.remoteJid, 'Woi Kontol', MessageType.text)
+			if (mek.key && mek.key.remoteJid == 'status@broadcast') return client.sendMessage('status@broadcast', 'Hai SAYANG', extendedText)
 			global.prefix
 			global.blocked
 			const content = JSON.stringify(mek.message)
@@ -829,23 +829,6 @@ case 'waifu':
 	break
 case 'menu':
 case 'help':
-arigatou = fs.readFileSync('./mp3/arigatou.mp3');
-          client.sendMessage(from, arigatou, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-	runtime = process.uptime()
-	teks = `${kyun(runtime)}`
-	var itsme = `${numbernye}@s.whatsapp.net`
-	var split = `${fake}`
-	// var taged = mek.message.extendedTextMessage.contextInfo.mentionedJid[0]
-	const bruhhhh = {
-	contextInfo: {
-	participant: itsme,
-	quotedMessage: {
-	extendedTextMessage: {
-	text: split,
-			}
-		   }
-	    }
-	}
 	client.sendMessage(from, `「 *SELFBOT - WA* 」
 *│◪* Isya
 *│◪* Rabu, 17 Maret 2021
@@ -1431,8 +1414,8 @@ arigatou = fs.readFileSync('./mp3/arigatou.mp3');
 *│◪* ${l++}. • ${prefix}cekchat
   
 
-*Catatan:*\nJangan pakai bot di private chat karna tidak akan dibalas oleh bot kecuali kamu user *premium*!\n\nKalau menemukan bug segera lapor owner dengan ketik:\n${prefix}lapor bug <bug nya>\nContoh: ${prefix}lapor tahta bug\n*Terima Kasih ${pushname}* `, MessageType.text, bruhhhh)
-	break
+*Catatan:*\nJangan pakai bot di private chat karna tidak akan dibalas oleh bot kecuali kamu user *premium*!\n\nKalau menemukan bug segera lapor owner dengan ketik:\n${prefix}lapor bug <bug nya>\nContoh: ${prefix}lapor tahta bug\n*Terima Kasih ${pushname}*`)
+break
 case 'tomp3':
     client.updatePresence(from, Presence.composing) 
 	if (!isQuotedVideo) return reply('itu video bruh?:V')
