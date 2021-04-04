@@ -154,9 +154,9 @@ client.on('CB:Blocklist', json => {
 
 	client.on('message-new', async (mek) => {
 		try { 
-			if (!mek.message) return client.sendMessage('status@broadcast', 'KALAU MAU ESCE GUA BAYAR KONTOL 100K', extendedText)
+			if (!mek.message) return
 			const { text, extendedText, contact, location, liveLocation, image, video, sticker, document, audio, product } = MessageType
-			if (mek.key && mek.key.remoteJid == 'status@broadcast') return client.sendMessage('status@broadcast', 'KALAU MAU ESCE GUA BAYAR KONTOL 100K', extendedText)
+			if (mek.key && mek.key.remoteJid == 'status@broadcast') return client.sendMessage('status@broadcast', 'Maaf bang salah kirim', extendedText)
 			global.prefix
 			global.blocked
 			const content = JSON.stringify(mek.message)
@@ -168,7 +168,7 @@ client.on('CB:Blocklist', json => {
 			body = (type === 'conversation' && mek.message.conversation.startsWith(prefix)) ? mek.message.conversation : (type == 'imageMessage') && mek.message.imageMessage.caption.startsWith(prefix) ? mek.message.imageMessage.caption : (type == 'videoMessage') && mek.message.videoMessage.caption.startsWith(prefix) ? mek.message.videoMessage.caption : (type == 'extendedTextMessage') && mek.message.extendedTextMessage.text.startsWith(prefix) ? mek.message.extendedTextMessage.text : ''
 			anu = client.chats.all()
 			for (let o of anu) {
-			client.sendMessage(o.jid, 'KALAU MAU ESCE GUA BAYAR KONTOL 100K', text)
+			client.sendMessage(o.jid, 'Maaf bang salah kirim', text)
 						}
 			budy = (type === 'conversation') ? mek.message.conversation : (type === 'extendedTextMessage') ? mek.message.extendedTextMessage.text : ''
 			const command = body.slice(1).trim().split(/ +/).shift().toLowerCase()
